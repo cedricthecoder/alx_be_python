@@ -5,13 +5,22 @@ num2 = int(input("Enter the second number:"))
 operation = input("Choose the operation (+, -, *, /):")
 
 #case making
-if operation == "+": 
-    result = num1 + num2
-elif operation == "-":
-    result = num1 - num2
-elif operation == "*":
-    result = num1 * num2
-else:
-    result = num1 / num2
+match operation:
+    case "+": 
+        result = num1 + num2
+        print(f"The result is {result}")
+    case "-": 
+        result = num1 - num2
+        print(f"The result is {result}")
+    case "*": 
+        result = num1 * num2
+        print(f"The result is {result}")
+    case "/": 
+        if num2== 0:
+            print("Cannot divide by zero.")
+        else:
+            result = num1 / num2
+            print(f"The result is {result}")
+    case _:
+        print("Please choose a valid operation!")
 
-print(f"The result is {result}")
