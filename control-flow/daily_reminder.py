@@ -8,25 +8,25 @@ match task_priority:
     
     case "high": 
         if time_bound == "yes":
-            print(f"{task_name} is a {task_priority} priority task that requires immediate attention today!")
+            print(f"Reminder: '{task_name}' is a {task_priority} priority task that requires immediate attention today!")
         elif time_bound == "no":
-            print(f"{task_name} is a {task_priority} priority task that requires you to delegate!")
+            print(f"Reminder: '{task_name}' is a {task_priority} priority task that requires you to delegate!")
         else:
             print("Something went wrong. Please try again.")
     
     case "medium": 
         if time_bound == "yes":
-            print(f"{task_name} is a {task_priority} priority task that requires immediate attention today!")
+            print(f"Reminder: '{task_name}' is a {task_priority} priority task that requires immediate attention today!")
         elif time_bound == "no":
-            print(f"{task_name} is a {task_priority} priority task that you can complete in your free time!")
+            print(f"Reminder: '{task_name}' is a {task_priority} priority task that you can complete in your free time!")
         else:
             print("Something went wrong. Please try again.")
     
     case "low": 
         if time_bound == "yes":
-            print(f"{task_name} is a {task_priority} priority task that requires you to ignore or delegate it today!")
+            print(f"Note: '{task_name}' is a {task_priority} priority task that requires you to ignore or delegate it today!")
         elif time_bound == "no":
-            print(f"{task_name} is a {task_priority} priority task. Consider completing it when you have free time.")
+            print(f"Note: '{task_name}' is a {task_priority} priority task. Consider completing it when you have free time.")
         else:
             print("Something went wrong. Please try again.")
     case _:
