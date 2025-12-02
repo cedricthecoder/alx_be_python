@@ -1,8 +1,5 @@
 def perform_operation(num1,num2,operation):
-    """num1 = None
-    num2 = None
-    store_number = None
-    operation = """
+    
     if operation == "add":
         return num1 + num2
     elif operation == "subtract":
