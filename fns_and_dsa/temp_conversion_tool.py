@@ -31,7 +31,7 @@ def get_temperature_input():
 
             return temp, unit
         except ValueError as e:
-            print(f"Error: {e}. Please enter a valid numeric value for temperature.")
+            print("Invalid temperature. Please enter a numeric value.")
 
 def main():
     """Main function to perform temperature conversion."""
