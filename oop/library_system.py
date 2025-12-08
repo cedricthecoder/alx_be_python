@@ -46,4 +46,9 @@ class Library:
 
     def add_book(self, book):
         """Add a Book, EBook, or PrintBook to the library."""
-        self.book
+        self.books.append(book)  # This appends the book to the list of books
+
+    def list_books(self):
+        """Print details of all books in the library."""
+        for book in self.books:
+            print(book)
